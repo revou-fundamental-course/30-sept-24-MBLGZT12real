@@ -1,0 +1,158 @@
+body{
+    background: aliceblue;
+    font-family: 'Calibri';
+    font-size: 17px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea{
+    width: 100%;
+    height: 50px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+.form-group{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button{
+    background-color: #04AA6D;
+    border: none;
+    border-radius:8px;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#result{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #04AA6D;
+}
+
+#result:hover{
+    background-color: #04AA6D;
+    color: white;
+}
+
+#reset{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+}
+
+#reset:hover{
+    background-color: #f44336;
+    color: white;
+}
+
+#reverse{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ff9800;
+}
+
+#reverse:hover{
+    background-color: #ff9800;
+    color: black;
+}
+
+#celcius{
+    width: 100%;
+    height: 20px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 17px;
+}
+
+#fahrenheit{
+    width: 100%;
+    height: 20px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 17px;
+}
+
+.rumus-hitung{
+    font-size: 22px;
+    font-family: math;
+}
+
+.rumus-s{
+    font-size: 22px;
+    font-style: italic;
+    font-family: math;
+}
+
+.rumus-num{
+    font-size: 22px;
+    font-family: math;
+}
+
+/*1440p*/
+@media (max-width:1440px){
+    body, textarea, #fahrenheit, #celcius{
+        font-size: 17px;
+    }
+
+    button{
+        font-size: 14px;
+    }
+
+    .rumus-hitung, .rumus-s, .rumus-num{
+        font-size: 22px;
+    }
+}
+
+/*Tablet*/
+@media (max-width:890px){
+    body, textarea, #fahrenheit, #celcius{
+        font-size: 16px;
+    }
+
+    button{
+        font-size: 13px;
+    }
+
+    .rumus-hitung, .rumus-s, .rumus-num{
+        font-size: 21px;
+    }
+}
+
+/*Mobile*/
+@media (max-width:425px) {
+    body, textarea, #fahrenheit, #celcius{
+        font-size: 15px;
+    }
+
+    button{
+        font-size: 12px;
+    }
+
+    .rumus-hitung, .rumus-s, .rumus-num{
+        font-size: 20px;
+    }
+}
