@@ -96,6 +96,23 @@ button{
     font-size: 17px;
 }
 
+.link{
+    color: blue;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.link:hover{
+    color: #f44336;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.link:active{
+    color: #ff9800;
+    text-decoration: underline;
+}
+
 .rumus-hitung{
     font-size: 22px;
     font-family: math;
