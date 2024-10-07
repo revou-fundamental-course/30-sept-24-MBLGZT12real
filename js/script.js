@@ -5,3 +5,9 @@ function konversi(){
     document.getElementById("fahrenheit").value = parseInt(hasil);
     document.getElementById("formula").innerHTML = '('+nilai+'&deg;C &times; (9/5)) + 32 = '+hasil+'&deg;F';
 }
+
+function reset(){
+    document.getElementById("celcius").value = "";
+    document.getElementById("fahrenheit").value = "";
+    document.getElementById("formula").innerHTML = "";
+}
