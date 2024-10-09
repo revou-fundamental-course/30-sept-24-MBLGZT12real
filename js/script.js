@@ -5,7 +5,7 @@ function konversi(){
     //var decimal=  /^[-+]?[0-9]+\.[0-9]+$/;
 
     if(nilai==""){
-        alert("Input Harus Angka!");
+        alert("Input Harus Terisi dan Angka!");
     }else{
         if(conve == "C2F"){
             let hasil = ((9/5) * nilai) + 32;
