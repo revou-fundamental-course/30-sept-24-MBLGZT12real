@@ -8,12 +8,12 @@ function konversi(){
         alert("Input Harus Terisi dan Angka!");
     }else{
         if(conve == "C2F"){
-            let hasil = ((9/5) * nilai) + 32;
-            document.getElementById("cHasil").value = parseFloat(hasil);
+            let hasil = parseFloat(((9/5) * nilai) + 32).toFixed(2);
+            document.getElementById("cHasil").value = parseFloat(hasil).toFixed(2);
             document.getElementById("cFormula").innerHTML = '('+nilai+'&deg;C &times; (9/5)) + 32 = '+hasil+'&deg;F';
         }else{
-            let hasil = (5/9) * (nilai - 32);
-            document.getElementById("cHasil").value = parseFloat(hasil);
+            let hasil = parseFloat((5/9) * (nilai - 32)).toFixed(2);
+            document.getElementById("cHasil").value = parseFloat(hasil).toFixed(2);
             document.getElementById("cFormula").innerHTML = '(5/9) &times; ('+nilai+'&deg;C - 32) = '+hasil+'&deg;F';
         }
         
@@ -25,12 +25,6 @@ function reset(){
     document.getElementById("cNilai").value = "";
     document.getElementById("cHasil").value = "";
     document.getElementById("cFormula").innerHTML = "";
-    document.getElementById("cHitungan").value = "C2F";
-    document.getElementById("nNilai").innerHTML = "Celcius (&deg;C): *";
-    document.getElementById("nHasil").innerHTML = "Fahrenheit (&deg;F):";
-    document.getElementById("link").innerText = "Fahrenheit ke Celcius";
-    document.getElementById("lF2C").style.display = "none";
-    document.getElementById("lC2F").style.display = "block";
     document.getElementById("cNilai").focus();
 }
 
