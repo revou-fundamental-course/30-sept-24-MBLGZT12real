@@ -18,6 +18,7 @@ function konversi(){
         }
         
     }
+    document.getElementById("cNilai").focus();
 }
 
 function reset(){
@@ -30,6 +31,7 @@ function reset(){
     document.getElementById("link").innerText = "Fahrenheit ke Celcius";
     document.getElementById("lF2C").style.display = "none";
     document.getElementById("lC2F").style.display = "block";
+    document.getElementById("cNilai").focus();
 }
 
 function reverse(){
@@ -47,6 +49,7 @@ function reverse(){
         document.getElementById("link").innerText = "Celcius ke Fahrenheit";
         document.getElementById("lF2C").style.display = "block";
         document.getElementById("lC2F").style.display = "none";
+        document.getElementById("cNilai").focus();
     }else{
         document.getElementById("cNilai").value = "";
         document.getElementById("cHasil").value = "";
@@ -57,5 +60,6 @@ function reverse(){
         document.getElementById("link").innerText = "Fahrenheit ke Celcius";
         document.getElementById("lF2C").style.display = "none";
         document.getElementById("lC2F").style.display = "block";
+        document.getElementById("cNilai").focus();
     }
 }
