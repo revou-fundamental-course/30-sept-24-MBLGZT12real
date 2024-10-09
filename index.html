@@ -18,43 +18,42 @@
         <hr>
     </header>
     <main>
+        <!--Bagian Proses-->
         <section>
             <article>
                 <p>Masukkan suhu derajat Celcius (&deg;C) ke kotak di bawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F) ataupun sebaliknya.</p>
             </article>
 
-            <!--<form name="konversi" onsubmit="konversi()">-->
-                <!--Input-->
-                <div class="form-group">
-                    <label for="cNilai" id="nNilai">Celcius (&deg;C): *</label>
-                    <div>
-                        <input type="number" name="cNilai" id="cNilai" inputmode="numeric" autofocus required>
-                    </div>
-                </div>
+            <!--Input Nilai-->
+            <div class="form-group">
+                <label for="cNilai" id="nNilai">Celcius (&deg;C): *</label>
                 <div>
-                    <input type="submit" value="Konversi" name="result" id="result" onclick="konversi()">
-                    <input type="reset" value="Reset" name="reset" id="reset" onclick="reset()">
-                    <input type="button" value="Reverse" name="reverse" id="reverse" onclick="reverse()">
-                    <input type="hidden" value="C2F" name="cHitungan" id="cHitungan" disabled>
+                    <input type="number" name="cNilai" id="cNilai" placeholder="Masukkan Nilai" inputmode="numeric" autofocus required>
                 </div>
-            <!--</form>-->
-
+            </div>
             <div>
-                <!--Result-->
+                <input type="submit" value="Konversi" name="result" id="result" onclick="konversi()">
+                <input type="reset" value="Reset" name="reset" id="reset" onclick="reset()">
+                <input type="button" value="Tukar" name="reverse" id="reverse" onclick="reverse()">
+                <input type="hidden" value="C2F" name="cHitungan" id="cHitungan" disabled>
+            </div>
+
+            <!--Hasil Konversi-->
+            <div>
                 <div class="form-group">
                     <label for="cHasil" id="nHasil">Fahrenheit (&deg;F):</label>
                     <div>
-                        <input type="number" name="cHasil" id="cHasil" disabled>
+                        <input type="number" name="cHasil" id="cHasil" placeholder="Hasil Konversi" disabled>
                     </div>
                 </div>
             </div>
 
+            <!--Formula Konversi-->
             <div>
-                <!--Formula-->
                 <div class="form-group">
                     <label for="cFormula">Cara Kalkulasi:</label>
                     <div>
-                        <textarea name="cFormula" id="cFormula" disabled></textarea>
+                        <textarea name="cFormula" id="cFormula" placeholder="Rumus Konversi" disabled></textarea>
                     </div>
                 </div>
             </div>
@@ -63,6 +62,9 @@
                 <p><a href="#" class="link" id="link" onclick="reverse()">Fahrenheit ke Celcius</a></p>
             </div>
         </section>
+
+        <!--Bagian Informasi-->
+        <!--Penjelasan Celcius ke Fahrenheit (default)-->
         <section id="lC2F">
             <header>
                 <h2>Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h2>
@@ -78,6 +80,8 @@
                 <p class="rumus-hitung"><span class="rumus-s">S</span> <sub>(&deg;F)</sub> = (<span class="rumus-s">S</span> <sub>(&deg;C)</sub> &times; 1.8) + 32</p>
             </article>
         </section>
+
+        <!--Penjelasan Fahrenheit ke Celcius (jika ditukar)-->
         <section id="lF2C" style="display: none;">
             <header>
                 <h2>Cara Konversi Dari Fahrenheit (&deg;F) ke Celcius (&deg;C)</h2>

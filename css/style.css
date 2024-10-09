@@ -1,3 +1,4 @@
+/**Style untuk General**/
 body{
     background: aliceblue;
     font-family: 'Calibri';
@@ -9,6 +10,7 @@ body{
     justify-content: center;
 }
 
+/**Style untuk Form**/
 .form-group{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -62,6 +64,7 @@ input[type=button], input[type=submit], input[type=reset]{
     cursor: pointer;
 }
 
+/**Style untuk Button**/
 #result{
     background-color: white; 
     color: black; 
@@ -95,6 +98,7 @@ input[type=button], input[type=submit], input[type=reset]{
     color: black;
 }
 
+/**Style untuk Link**/
 .link{
     color: blue;
     text-decoration: none;
@@ -112,6 +116,8 @@ input[type=button], input[type=submit], input[type=reset]{
     text-decoration: underline;
 }
 
+
+/**Style untuk Informasi**/
 .rumus-hitung{
     font-size: 22px;
     font-family: math;
@@ -128,13 +134,21 @@ input[type=button], input[type=submit], input[type=reset]{
     font-family: math;
 }
 
-/*1440p*/
+/*Desktop dari 1440p*/
 @media (max-width:1440px){
-    body, textarea, #cHasil, #cNilai{
+    body, textarea, #cHasil, #cNilai, .link{
         font-size: 17px;
     }
 
-    button{
+    h1{
+        font-size: 32px;
+    }
+
+    h2{
+        font-size: 26px;
+    }
+
+    input[type=button], input[type=submit], input[type=reset]{
         font-size: 14px;
     }
 
@@ -145,11 +159,19 @@ input[type=button], input[type=submit], input[type=reset]{
 
 /*Tablet*/
 @media (max-width:890px){
-    body, textarea, #cHasil, #cNilai{
+    body, textarea, #cHasil, #cNilai, .link{
         font-size: 16px;
     }
 
-    button{
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    input[type=button], input[type=submit], input[type=reset]{
         font-size: 13px;
     }
 
@@ -160,11 +182,19 @@ input[type=button], input[type=submit], input[type=reset]{
 
 /*Mobile*/
 @media (max-width:425px) {
-    body, textarea, #cHasil, #cNilai{
+    body, textarea, #cHasil, #cNilai, .link{
         font-size: 15px;
     }
 
-    button{
+    h1{
+        font-size: 28px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    input[type=button], input[type=submit], input[type=reset]{
         font-size: 12px;
     }
 
