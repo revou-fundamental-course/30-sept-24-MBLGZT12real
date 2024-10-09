@@ -9,6 +9,11 @@ body{
     justify-content: center;
 }
 
+.form-group{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 textarea{
     width: 100%;
     height: 50px;
@@ -17,16 +22,33 @@ textarea{
     border: 2px solid #ccc;
     border-radius: 4px;
     background-color: #f8f8f8;
-    font-size: 16px;
+    font-size: 17px;
     resize: none;
 }
 
-.form-group{
-    margin-top: 10px;
-    margin-bottom: 10px;
+#cNilai{
+    width: 100%;
+    height: 22px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 17px;
 }
 
-button{
+#cHasil{
+    width: 100%;
+    height: 22px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 17px;
+}
+
+input[type=button], input[type=submit], input[type=reset]{
     background-color: #04AA6D;
     border: none;
     border-radius:8px;
@@ -74,28 +96,6 @@ button{
     color: black;
 }
 
-#celcius{
-    width: 100%;
-    height: 20px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    font-size: 17px;
-}
-
-#fahrenheit{
-    width: 100%;
-    height: 20px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    font-size: 17px;
-}
-
 .link{
     color: blue;
     text-decoration: none;
@@ -131,7 +131,7 @@ button{
 
 /*1440p*/
 @media (max-width:1440px){
-    body, textarea, #fahrenheit, #celcius{
+    body, textarea, #cHasil, #cNilai{
         font-size: 17px;
     }
 
@@ -146,7 +146,7 @@ button{
 
 /*Tablet*/
 @media (max-width:890px){
-    body, textarea, #fahrenheit, #celcius{
+    body, textarea, #cHasil, #cNilai{
         font-size: 16px;
     }
 
@@ -161,7 +161,7 @@ button{
 
 /*Mobile*/
 @media (max-width:425px) {
-    body, textarea, #fahrenheit, #celcius{
+    body, textarea, #cHasil, #cNilai{
         font-size: 15px;
     }
 

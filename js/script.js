@@ -1,13 +1,61 @@
 function konversi(){
-    let nilai = document.getElementById("celcius").value;
-    let hasil = (parseInt(nilai) * 1.8) + parseInt(32);
-    
-    document.getElementById("fahrenheit").value = parseInt(hasil);
-    document.getElementById("formula").innerHTML = '('+nilai+'&deg;C &times; (9/5)) + 32 = '+hasil+'&deg;F';
+    let nilai = parseFloat(document.getElementById("cNilai").value);
+    let hasil = "";
+    let conve = document.getElementById("cHitungan").value;
+    //var decimal=  /^[-+]?[0-9]+\.[0-9]+$/;
+
+    if(nilai==""){
+        alert("Input Harus Angka!");
+    }else{
+        if(conve == "C2F"){
+            let hasil = ((9/5) * nilai) + 32;
+            document.getElementById("cHasil").value = parseFloat(hasil);
+            document.getElementById("cFormula").innerHTML = '('+nilai+'&deg;C &times; (9/5)) + 32 = '+hasil+'&deg;F';
+        }else{
+            let hasil = (5/9) * (nilai - 32);
+            document.getElementById("cHasil").value = parseFloat(hasil);
+            document.getElementById("cFormula").innerHTML = '(5/9) &times; ('+nilai+'&deg;C - 32) = '+hasil+'&deg;F';
+        }
+        
+    }
 }
 
 function reset(){
-    document.getElementById("celcius").value = "";
-    document.getElementById("fahrenheit").value = "";
-    document.getElementById("formula").innerHTML = "";
+    document.getElementById("cNilai").value = "";
+    document.getElementById("cHasil").value = "";
+    document.getElementById("cFormula").innerHTML = "";
+    document.getElementById("cHitungan").value = "C2F";
+    document.getElementById("nNilai").innerHTML = "Celcius (&deg;C): *";
+    document.getElementById("nHasil").innerHTML = "Fahrenheit (&deg;F):";
+    document.getElementById("link").innerText = "Fahrenheit ke Celcius";
+    document.getElementById("lF2C").style.display = "none";
+    document.getElementById("lC2F").style.display = "block";
+}
+
+function reverse(){
+    let hitungan = document.getElementById("cHitungan").value;
+    let nNilai = document.getElementById("nNilai");
+    let nHasil = document.getElementById("nHasil");
+
+    if(hitungan == "C2F"){
+        document.getElementById("cNilai").value = "";
+        document.getElementById("cHasil").value = "";
+        document.getElementById("cFormula").innerHTML = "";
+        document.getElementById("cHitungan").value = "F2C";
+        nNilai.innerHTML = "Fahrenheit (&deg;F): *";
+        nHasil.innerHTML = "Celcius (&deg;C):";
+        document.getElementById("link").innerText = "Celcius ke Fahrenheit";
+        document.getElementById("lF2C").style.display = "block";
+        document.getElementById("lC2F").style.display = "none";
+    }else{
+        document.getElementById("cNilai").value = "";
+        document.getElementById("cHasil").value = "";
+        document.getElementById("cFormula").innerHTML = "";
+        document.getElementById("cHitungan").value = "C2F";
+        nNilai.innerHTML = "Celcius (&deg;C): *";
+        nHasil.innerHTML = "Fahrenheit (&deg;F):";
+        document.getElementById("link").innerText = "Fahrenheit ke Celcius";
+        document.getElementById("lF2C").style.display = "none";
+        document.getElementById("lC2F").style.display = "block";
+    }
 }
