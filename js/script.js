@@ -1,11 +1,12 @@
 function konversi(){
-    let nilai = parseFloat(document.getElementById("cNilai").value);
-    let hasil = "";
-    let conve = document.getElementById("cHitungan").value;
+    let nInput  = document.getElementById("cNilai").value;
+    let nilai   = parseFloat(nInput);
+    let hasil   = "";
+    let conve   = document.getElementById("cHitungan").value;
     //var decimal=  /^[-+]?[0-9]+\.[0-9]+$/;
 
-    if(nilai==""){
-        alert("Input Harus Terisi dan Angka!");
+    if(nInput==""){
+        alert("Harus Terisi dan Angka!");
     }else{
         if(conve == "C2F"){
             let hasil = parseFloat(((9/5) * nilai) + 32).toFixed(2);
